@@ -9,7 +9,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{oldstyle}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -19,7 +19,8 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.87]{geometry}
+% \usepackage[scale=0.80]{geometry}
+\usepackage[top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -56,22 +57,32 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Education}
-\cventry{2011--2013}{Master of Science}{AGH University of Science and Technology}{Krakow, Poland}{}{Computer Science\newline Specialization: Interactive Systems and Visualization Methods}  % arguments 3 to 6 can be left empty
-\cventry{2007--2011}{Engineer}{AGH University of Science and Technology}{Krakow, Poland}{}{Computer Science}
-
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
 
+\section{Objective}
+I aim to solve highly challenging real-life problems. I use my fast learning ability and computer competence to stay on top of new technologies and hope to become a reliable and proficient IT consultant.	
+
+%\section{Objective}	
+%To be more. From Software Developer to Software Engineer. From academic problems solver to IT consultant. From Team Player to Team Leader.
+
+%\section{Objective}
+%To advance from Software Development to Software Engineering and System Design. To build on academic problem solving experience and solve real-life problems as an IT consultant.
+
 \section{Experience}
 \cventry{Oct 2012--Oct 2013}{Software Engineer}{u2i LLC}{Krakow, Poland}{}{High availability system design and development, big data analysis, web development}
-\cventry{Jan 2012--Aug 2012}{Algorithmic Researcher, Intern}{Fujitsu Laboratories Ltd}{Kawasaki, Japan}{}{Combinatorial optimization, formal verification, natural language processing}
-\cventry{July 2010--Sept 2010}{Software Developer, Intern}{ESISAR, Grenoble Institute of Technology}{Valence, France}{}{Water flow modelling and visualization}
+\cventry{Jan 2012--Aug 2012}{Algorithmic Researcher, Intern}{Fujitsu Laboratories Ltd}{Kawasaki, Japan}{Vulcanus in Japan Programme}{Combinatorial optimization, formal verification, natural language processing}
+\cventry{July 2010--Sept 2010}{Software Developer, Intern}{ESISAR, Grenoble Institute of Technology}{Valence, France}{LLP ERASMUS programme}{Water flow modelling and visualization}
 \cventry{July 2009--Aug 2011}{Software Engineer}{Institute of Nuclear Physics PAN}{Krakow, Poland}{}{Cloud system development}
-\cventry{Aug 2008, Feb 2008, Sept 2007}{Software Developer}{CERN - European Organization for Nuclear Research}{Geneva, Switzerland}{}{Optimization and implementation of regression and classification algorithms in Toolkit for Multivariate Data Analysis of ROOT framework}
-\cventry{June 2007--Sept 2007}{Software Developer}{Institute of Nuclear Physics PAN}{Krakow, Poland}{}{Preparing a tool for multidimensional event classification based on approximation of the probability density function of training data for ATHENA detector at CERN}
+\cventry{Aug 2008, Feb 2008, Sept 2007}{Software Developer}{CERN - European Organization for Nuclear Research}{Geneva, Switzerland}{Summer job}{Algorithms optimization and implementation in Toolkit for Multivariate Data Analysis}
+\cventry{June 2007--Sept 2007}{Software Developer}{Institute of Nuclear Physics PAN}{Krakow, Poland}{Summer job}{Preparing a tool for multidimensional event classification for ATHENA detector at CERN}
+
+\section{Education}
+\cventry{2011--2013}{Master of Science}{AGH University of Science and Technology}{Krakow, Poland}{}{Computer Science\newline Specialization: Interactive Systems and Visualization Methods}  % arguments 3 to 6 can be left empty
+\cventry{2007--2011}{Engineer}{AGH University of Science and Technology}{Krakow, Poland}{}{Computer Science}
+%\cventry{2004--2007}{}{Vth High School}{Krakow, Poland}{}{Computer Science and Mathematics profile\newline Algorithmic classes organized by Jagiellonian University in Krakow}
 
 \section{Languages}
 \cvitemwithcomment{Polish}{Native}{}
@@ -79,18 +90,17 @@
 \cvitemwithcomment{Japanese}{Intermediate}{Japanese Language Proficiency Test N3, Dec 2012}
 
 \section{Skills and Competences}
-\cvitem{Programming}{C/C++, Java, Ruby, Python}
-\cvitem{Big data}{Hive, Pig, Hadoop}
-\cvitem{High availability}{Pacemaker, Chef, Amazon EC2, S3, RDS, OpsWorks}
+\cvdoubleitem{Programming}{C/C++, Java, Ruby, Python}{Big data}{Hive, Pig, Hadoop}
+\cvitem{DevOps}{Pacemaker, Chef, Amazon EC2, S3, RDS, OpsWorks}
 \cvitem{Web development}{Ruby on Rails, CSS, HTML}
 \cvitem{Environments}{Vim, Emacs, Eclipse, Visual Studio 2012}
-\cvitem{Operating systems}{Windows, Linux, Unix, OS X}
-\cvitem{Others}{Git, \LaTeX}{}{}
-\cvitem{Specialty}{Advanced algorithms and data structures}
+\cvitem{Operating systems}{Windows, Linux, OS X}
+\cvdoubleitem{CVS}{Git}{Typography}{\LaTeX}
+\cvitem{Others}{Advanced algorithms and data structures}
 
 %\section{Interests}
+%\cvitem{}{Travel}
 %\cvitem{}{Literature}
-%\cvitem{}{Movie}
 %\cvitem{}{Skiing}
 
 %\section{Extra 1}
