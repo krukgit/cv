@@ -20,7 +20,7 @@
 
 % adjust the page margins
 % \usepackage[scale=0.80]{geometry}
-\usepackage[top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -38,7 +38,7 @@
 %\social[github]{krukgit}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\quote{Listening is not waiting to speak}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -63,7 +63,7 @@
 %\cvitem{description}{Short thesis abstract}
 
 \section{Objective}
-I aim to solve highly challenging real-life problems. I use my fast learning ability and computer competence to stay on top of new technologies and hope to become a reliable and proficient IT consultant.	
+I aim to solve highly challenging real-life problems. I use my fast learning ability and computer competence to stay on top of new technologies and strive to become a reliable and proficient IT consultant.	
 
 %\section{Objective}	
 %To be more. From Software Developer to Software Engineer. From academic problems solver to IT consultant. From Team Player to Team Leader.
@@ -72,12 +72,17 @@ I aim to solve highly challenging real-life problems. I use my fast learning abi
 %To advance from Software Development to Software Engineering and System Design. To build on academic problem solving experience and solve real-life problems as an IT consultant.
 
 \section{Experience}
-\cventry{Oct 2012--Oct 2013}{Software Engineer}{u2i LLC}{Krakow, Poland}{}{High availability system design and development, big data analysis, web development}
-\cventry{Jan 2012--Aug 2012}{Algorithmic Researcher, Intern}{Fujitsu Laboratories Ltd}{Kawasaki, Japan}{Vulcanus in Japan Programme}{Combinatorial optimization, formal verification, natural language processing}
-\cventry{July 2010--Sept 2010}{Software Developer, Intern}{ESISAR, Grenoble Institute of Technology}{Valence, France}{LLP ERASMUS programme}{Water flow modelling and visualization}
-\cventry{July 2009--Aug 2011}{Software Engineer}{Institute of Nuclear Physics PAN}{Krakow, Poland}{}{Cloud system development}
-\cventry{Aug 2008, Feb 2008, Sept 2007}{Software Developer}{CERN - European Organization for Nuclear Research}{Geneva, Switzerland}{Summer job}{Algorithms optimization and implementation in Toolkit for Multivariate Data Analysis}
-\cventry{June 2007--Sept 2007}{Software Developer}{Institute of Nuclear Physics PAN}{Krakow, Poland}{Summer job}{Preparing a tool for multidimensional event classification for ATHENA detector at CERN}
+\cventry{Oct 2012--Oct 2013}{Software Engineer}{u2i LLC}{Krakow, Poland}{}{Developing a web application (Ruby on Rails) and a supporting backend (MySQL, Java, Redis) for Twitter TV analytics as part of an Agile team. Working directly with clients as an IT consultant. Personal responsibilities included design and development of a robust tweets collection system capable of handling a constant stream of high volume data (Java, Hosebird, Kestrel), performing analytics on the data (Hive, Hadoop) and managing the associated infrastructure (Amazon Web Services, Chef). Other technologies involved: Pacemaker, Pivotal, git, jQuery, node.js, CSS.}
+%{High availability system design and development, big data analysis, web development}
+
+\cventry{Jan 2012--Aug 2012}{Algorithmic Researcher, Intern}{Fujitsu Laboratories Ltd}{Kawasaki, Japan}{Vulcanus in Japan Programme}{Technical internship in a multicultural environment. Individual research project involving combinatorial optimization of a large electrical grid. Small side projects including sentiment detection (natural language processing) and formal verification (PRISM, Verilog).}
+%{Combinatorial optimization, formal verification, natural language processing}
+\cventry{July 2010--Sept 2010}{Software Developer, Intern}{ESISAR, Grenoble Institute of Technology}{Valence, France}{LLP ERASMUS programme}{Water flow modelling and visualization using Lattice-Boltzmann methods in 2D and 3D. C++, MATLAB, Palabos.}
+
+\cventry{July 2009--Aug 2011}{Software Engineer}{Institute of Nuclear Physics PAN}{Krakow, Poland}{}{Designing the infrastructure and developing the back-end of a private cloud system. Xen, KVM, Libvirt, OpenNebula, Eucalyptus, Python, Django, Redmine, Git. }
+
+\cventry{Aug 2008, Feb 2008, Sept 2007}{Software Developer}{CERN - European Organization for Nuclear Research}{Geneva, Switzerland}{Summer job}{Regression and classification algorithms optimization and implementation in Toolkit for Multivariate Data Analysis of ROOT package. C++, ROOT, SVN.}
+\cventry{June 2007--Sept 2007}{Software Developer}{Institute of Nuclear Physics PAN}{Krakow, Poland}{Summer job}{Preparing a tool for multidimensional event classification for ATHENA detector at CERN based on approximation of a probability density function of training data. C++.}
 
 \section{Education}
 \cventry{2011--2013}{Master of Science}{AGH University of Science and Technology}{Krakow, Poland}{}{Computer Science\newline Specialization: Interactive Systems and Visualization Methods}  % arguments 3 to 6 can be left empty
@@ -87,21 +92,23 @@ I aim to solve highly challenging real-life problems. I use my fast learning abi
 \section{Languages}
 \cvitemwithcomment{Polish}{Native}{}
 \cvitemwithcomment{English}{Fluent}{}
-\cvitemwithcomment{Japanese}{Intermediate}{Japanese Language Proficiency Test N3, Dec 2012}
+\cvitemwithcomment{Japanese}{Intermediate}{Japanese Language Proficiency Test, Level N3, Dec 2012}
 
 \section{Skills and Competences}
-\cvdoubleitem{Programming}{C/C++, Java, Ruby, Python}{Big data}{Hive, Pig, Hadoop}
-\cvitem{DevOps}{Pacemaker, Chef, Amazon EC2, S3, RDS, OpsWorks}
+\cvitem{Programming}{C/C++, Java, Ruby, Python}
+\cvitem{Big data}{Hive, Hadoop}
+\cvitem{DevOps}{Chef, Amazon EC2, S3, RDS, OpsWorks, EMR, Pacemaker}
 \cvitem{Web development}{Ruby on Rails, CSS, HTML}
 \cvitem{Environments}{Vim, Emacs, Eclipse, Visual Studio 2012}
 \cvitem{Operating systems}{Windows, Linux, OS X}
-\cvdoubleitem{CVS}{Git}{Typography}{\LaTeX}
-\cvitem{Others}{Advanced algorithms and data structures}
+\cvitem{Others}{Git, \LaTeX, Agile Methodologies}
+\cvitem{Specialty}{Advanced algorithms and data structures}
 
-%\section{Interests}
-%\cvitem{}{Travel}
-%\cvitem{}{Literature}
-%\cvitem{}{Skiing}
+\section{Interests}
+Travel, literature, skiing.
+%\cvitem{Travel}{I greatly enjoy living and working in different environments. They say travel broadens the mind and I found it to be absolutely true.}
+%\cvitem{Literature}{}
+%\cvitem{Skiing}{Although most of my time I spend in front of a computer I do enjoy occasional exercise. Skiing allows me to disconnect and enjoy the nature.}
 
 %\section{Extra 1}
 %\cvlistitem{Item 1}
