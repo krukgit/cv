@@ -176,7 +176,9 @@
   \par\nobreak\addvspace{0.5ex}\@afterheading}
 
 \renewcommand*{\cvitem}[3][.25em]{%
-  \ifthenelse{\equal{#2}{}}{}{\hintstyle{#2}: }{#3}%
+  \ifthenelse{\equal{#3}{}}{\hintstyle{#2}}{%
+    \ifthenelse{\equal{#2}{}}{}{\hintstyle{#2}: }{#3}%
+  }
   \par\addvspace{#1}}
 
 \renewcommand*{\cvdoubleitem}[5][.25em]{%

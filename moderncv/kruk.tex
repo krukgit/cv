@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 \usepackage[super]{nth}
 % adjust the page margins
-\usepackage[scale=0.80]{geometry}
+\usepackage[scale=0.85]{geometry}
 %\usepackage[top=1.1cm, bottom=1.1cm, left=1.2cm, right=1.2cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
@@ -36,7 +36,7 @@
 \social[linkedin]{maciejkruk}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{makhant}                             % optional, remove / comment the line if not wanted
 %\social[github]{krukgit}                              % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\extrainfo{}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
@@ -71,37 +71,207 @@
 %\section{Objective}
 %To advance from Software Development to Software Engineering and System Design. To build on academic problem solving experience and solve real-life problems as an IT consultant.
 
+%as part of an Agile team. Personal responsibilities include design and development of a robust and scalable data collection system, performing data analytics and managing the associated infrastructure while working closely with the client.
 \section{Experience}
 %------------  U2I
-\cventry{Oct 2012--Nov 2013}{Senior Developer}{\httplink[u2i LLC]{www.u2i.com/}}{Krakow, Poland/New York, USA}{}{Developed a web application and its backend as part of an Agile team working for a start-up company recently acqui-hired by the largest TV audience monitoring company in the world.  Personal responsibilities included design and development of a~robust and scalable data collection system (currently processing 1 GiB of data per minute), performing real-time and aggregated data analytics and managing the associated infrastructure while working closely with the client on both technical side and business logic.}
+\cventry{Oct 2012--Nov 2013}{Senior Developer}{\httplink[u2i LLC]{www.u2i.com/}}{Krakow, Poland/New York, USA}{}{Designing and developing a reporting system with accompanying web application and data analytics infrastructure for generating social TV measurement, analytics and audience engagement solutions.%
+  \begin{itemize}
+  \item Responsibilities:
+    \begin{itemize}
+    \item Following Agile methodology:
+      \begin{itemize}
+      \item Scrum;
+      \item Test Driven Development;
+      \item Pair Programming;
+      \item Daily stand-ups;
+      \item Weekly company stand-ups;
+      \end{itemize}
+    \item Working closely with the client:
+      \begin{itemize}
+      \item Revisiting business goals;
+      \item Presenting designs to client's Principal Architect;
+      \end{itemize}
+    \item Mentoring new employees;
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+  \item Duties performed:%
+    \begin{itemize}%
+    \item Developed functionality for discovering cross-relations between TV and Movie data:
+      \begin{itemize}
+      \item Prepared a script for analyzing the data using Amazon EMR and Apache Hive;
+      \item Created a dynamic platform for generating reports using Ruby on Rails, jQuery and Highcharts JS;
+      \item Prepared a dynamic XML and PDF generation functionality;
+      \end{itemize}
+    \item Built a functionality for exporting selected tweets into clients' systems:
+      \begin{itemize}
+      \item Wrote Node.js service based on Socket.IO and Redis Pub/Sub system to synchronize the state between users;
+      \item Built RESTful API for accessing the data programmatically;
+      \end{itemize}
+    \item Prepared a number of custom data reports revolving around TV, movies, brands and advertisements:
+      \begin{itemize}
+      \item Implemented DataSift demographic analytics integration;
+      \item Prepared custom demographics data report for Super Bowl XLVII from over 26 mln relevant tweets;
+      \item Prepared custom advertisments report for MTV VMA;
+      \end{itemize}
+    \item Played vital role in creating the Nielsen Twitter TV Rating system:
+      \begin{itemize}
+      \item Designed the tweet collection system to archive the full Twitter Firehose (1 GiB/min);
+      \item Designed the data processing pipeline
+      \item Implemented the collection system using Java, HBC, Kestrel, Finagle on top of AWS;
+      \item Created a Ruby on Rails application for orchestrating and monitoring Hive and Hadoop jobs;
+      \item Automated cluster configuration and monitoring using Chef, NewRelic, CloudWatch and Pacemaker;
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+  Team received Nielsen's Outstanding Achievement Award in recognition of the commitment shown in delivery of the Nielsen Twitter TV Rating;\newline}
+
 
 %------------  FUJITSU
-\cventry{Jan 2012--Aug 2012}{Algorithmic Researcher}{\httplink[Fujitsu Laboratories Ltd.]{jp.fujitsu.com/group/labs/en/}}{Kawasaki, Japan}{Vulcanus in Japan Programme}{Worked on projects involving combinatorial optimization, formal verification, natural language processing and high-frequency trading. Details confidential.}
+\cventry{Jan 2012--Aug 2012}{Algorithmic Researcher}{\httplink[Fujitsu Laboratories Ltd.]{jp.fujitsu.com/group/labs/en/}}{Kawasaki, Japan}{Vulcanus in Japan Programme}{Worked on projects involving combinatorial optimization, formal verification and high-frequency trading.%
+  \begin{itemize}
+  \item Duties performed:
+    \begin{itemize}
+    \item Researched Finite State Automata and Markov Models;
+    \item Modelled a fallback system using PRISM and Verilog;
+    \item Tested performance of multiple desktop sharing systems;
+    \item Implemented a simple high-frequency trading solution: 
+      \begin{itemize}
+      \item Initial version using Python and Natural Language Toolkit
+      \item Final version using Java and Stanford Natural Language Processing library
+      \end{itemize}
+    \item Implemented a combinatorial optimization solution for large grids;
+    \end{itemize}
+  \end{itemize}
+  ~}
 
 %------------  ESISAR
-\cventry{July 2010--Sept 2010}{Software Developer}{\httplink[ESISAR, Grenoble Institute of Technology]{esisar.grenoble-inp.fr/}}{Valence, France}{LLP ERASMUS programme}{Developed an application for water flow modelling and visualization using Lattice-Boltzmann methods in 2D and 3D.}
+\cventry{July 2010--Sept 2010}{Software Developer}{\httplink[ESISAR, Grenoble Institute of Technology]{esisar.grenoble-inp.fr/}}{Valence, France}{LLP ERASMUS programme}{Developed an application for water flow modelling.
+  \begin{itemize}
+  \item Duties performed:
+    \begin{itemize}
+    \item Implemented 2D fluid simulation in C++ using Palabos library;
+    \item Researched Lattice-Boltzmann methods in 2D and 3D;
+    \item Implemented 2D and 3D model in Matlab;
+    \item Adapted theoretical model for irrigation networks simulation from 2D to 3D;
+    \item Developed 3D irrigation network simulation:
+      \begin{itemize}
+      \item Implemented engine in C++
+      \item Implemented visualization in C++ using OpenGL
+      \item Implemented TCP/IP server to connect the visualization with the engine
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+  ~}
 
 %------------  IFJ 
-\cventry{July 2009--Aug 2011}{Software Engineer}{\httplink[Institute of Nuclear Physics PAN]{www.ifj.edu.pl/?lang=en}}{Krakow, Poland}{}{Designed and developed a \httplink[private cloud computing system]{cc1.ifj.edu.pl/}. System currently manages 600 CPU cores and is used mainly for processing the data from CERN's Large Hydron Collider.}
+\cventry{July 2009--Aug 2011}{Software Engineer}{\httplink[Institute of Nuclear Physics PAN]{www.ifj.edu.pl/?lang=en}}{Krakow, Poland}{}{Designed and developed a \httplink[private cloud computing system]{cc1.ifj.edu.pl/}.
+  \begin{itemize}
+  \item Duties performed:
+    \begin{itemize}
+    \item Researched existing cloud management systems (Eucalyptus, OpenNebula);
+    \item Tested Eucalyptus and OpenNebula as standalone systems; 
+    \item Reasearched virtualization technologies (Xen, VMware, KVM) and libraries (libvirt);
+    \item Built the system prototype on top of OpenNebula;
+    \item Built the backend using Python and Django on top of libvirt and KVM; 
+    \item Built EC2 compatible API;
+    \end{itemize}
+  \end{itemize}
+  System currently manages 600 CPU cores and is used mainly for processing data from CERN's Large Hydron Collider.\newline}
 
 %------------  CERN
-\cventry{Sept 2007, Feb 2008, Aug 2008}{Software Developer}{\httplink[CERN - European Organization for Nuclear Research]{home.web.cern.ch/}}{Geneva, Switzerland}{Summer job}{Optimized and implemented regression and classification algorithms in \httplink[Toolkit for Multivariate Data Analysis]{tmva.sourceforge.net/}.}
+\cventry{Sept 2007, Feb 2008, Aug 2008}{Software Developer}{\httplink[CERN - European Organization for Nuclear Research]{home.web.cern.ch/}}{Geneva, Switzerland}{Summer job}{Optimized and implemented regression and classification algorithms in \httplink[Toolkit for Multivariate Data Analysis]{tmva.sourceforge.net/}.
+  \begin{itemize}
+  \item Duties performed:
+    \begin{itemize}
+    \item Optimized Probability Density Estimator - Range Search implementation
+    \item Developed Simulated Annealing minimization algorithm
+    \item Adapted classification methods to use for regression:
+      \begin{itemize}
+      \item Probability Density Estimator Range Search 
+      \item Function Discriminant Analysis
+      \item Support Vector Machine
+      \end{itemize}
+    \item Implemented Linear Discriminand regresion and classification methods
+    \end{itemize}
+  \item Technologies used:
+    \begin{itemize}
+    \item C++ for development
+    \item SVN for version control
+    \item Doxygen for documentation
+    \end{itemize}
+  \end{itemize}
+  ~}
 
 %------------ IFJ
-\cventry{June 2007--Sept 2007}{Software Developer}{\httplink[Institute of Nuclear Physics PAN]{www.ifj.edu.pl/?lang=en}}{Krakow, Poland}{Summer job}{Prepared a tool for multidimensional event classification for ATHENA detector at CERN.}
+\cventry{June 2007--Sept 2007}{Software Developer}{\httplink[Institute of Nuclear Physics PAN]{www.ifj.edu.pl/?lang=en}}{Krakow, Poland}{Summer job}{Prepared a tool for multidimensional event classification for ATHENA detector at CERN.
+  \begin{itemize}
+  \item Duties performed:
+    \begin{itemize}
+    \item Learned about the tauRec package and Athena framework;
+    \item Constructed a multivariate analysis algorithm for tauRec using C++;
+    \end{itemize}
+  \end{itemize}
+  ~}
 
 %------------ M&I
-\cventry{July 2007--Oct 2007}{Web Developer}{\httplink[M\&I Doradztwo Inwestycyjne]{www.mi-doradztwo.com.pl/}}{Krakow, Poland}{}{Designed, developed and maintained a company website.}
+\cventry{July 2007--Oct 2007}{Web Developer}{\httplink[M\&I Doradztwo Inwestycyjne]{www.mi-doradztwo.com.pl/}}{Krakow, Poland}{}{Designed, developed and maintained a company website.
+  \begin{itemize}
+  \item Technologies used:
+    \begin{itemize}
+    \item HTML
+    \item CSS
+    \item PHP
+    \item Adobe Photoshop
+    \item Macromedia Flash
+    \end{itemize}
+  \end{itemize}
+}
 
 
 \section{Education}
-\cventry{2011--2013}{Magister (Master of Science)}{AGH University of Science and Technology}{Krakow, Poland}{}{Computer Science\newline Specialization: Interactive Systems and Visualization Methods}  % arguments 3 to 6 can be left empty
+\cventry{2011--2013}{Magister (Master of Science)}{AGH University of Science and Technology}{Krakow, Poland}{}{Computer Science\newline Specialization: Interactive Systems and Visualization Methods}
 \cventry{2007--2011}{In\.zynier (Engineer)}{AGH University of Science and Technology}{Krakow, Poland}{}{Computer Science}
 %\cventry{2004--2007}{}{Vth High School}{Krakow, Poland}{}{Computer Science and Mathematics profile\newline Algorithmic classes organized by Jagiellonian University in Krakow}
 
+\section{Skills and competences}
+\cvitem{Advanced algorithms and data structures}{}
+\cvitemwithcomment{C/C++ programming}{STL, Boost, Doxygen, Visual Studio 2012}{}
+\cvitemwithcomment{Java programming}{JUnit, Javadoc, Eclipse}{}
+\cvitem{Other programming}{Ruby, Python}
+\cvitem{Databases and messaging systems}{MySQL, Redis, Kestrel}
+\cvitem{Data analytics}{Apache Hive, Amazon Elastic MapReduce}
+\cvitem{DevOps}{Opscode Chef, Amazon EC2, S3, RDS, IAM}
+\cvitem{Parallel computing}{OpenMPI, CUDA}
+\cvitem{Virtualization}{Xen, KVM, QEMU, libvirt}
+\cvitem{Web development}{Ruby on Rails, CSS, HTML, SOAP, REST, XML, JSON}
+\cvitem{Environments}{Vim, Emacs}
+\cvitem{Operating systems}{Linux, OS X, Windows}
+\cvitem{Version control systems}{Git, SVN}
+\cvitem{Agile}{Agile methodology, Scrum, TDD, Pair programming}
+\cvitem{Team management}{Redmine, Pivotal Tracker}
+\cvitem{Documents editing}{\LaTeX, Microsoft Office}
+\cvitem{Graphics software}{Adobe Photoshop}
+
+\section{Exposure}
+\cvitem{Programming}{Matlab, Pascal, Erlang, Lisp, Icon, Assembly 8086, Perl, Verilog}
+\cvitem{Databases}{CouchDB, Amazon Redshift}
+\cvitem{Data analytics}{Apache Hadoop, Apache Pig}
+\cvitem{DevOps}{Clusterlabs Pacemaker, Amazon Route 53, OpsWorks}
+\cvitem{Parallel computing}{OpenCL, OpenMP}
+\cvitem{Web development}{AJAX, Django, jQuery, Node.js}
+
+\section{Trainings and courses}
+\cventry{July 2013}{Leadership Development Intensive}{Scherer Leadership International}{Krakow, Poland}{}{}
+\cventry{Feb, April, June 2013}{Team development training}{Scherer Leadership International}{Krakow, Poland}{}{}
+\cventry{Feb 2012}{CS373: Artificial Intelligence for Robotics}{Udacity}{}{}{Highest distinction}
+\cventry{June 2012}{CS387: Applied Cryptography and Encryption}{Udacity}{}{}{Highest distinction}
+\cventry{Sept--Dec 2011}{Japanese Language intensive course}{Naganuma School}{Tokyo, Japan}{}{}
+
 \section{Personal Achievements}
-\cventry{2012}{Finalist}{\httplink[ACM Central Europe Programming Contest]{cerc.tcs.uj.edu.pl/ranking/}}{Krakow, Poland}{}{}
-\cventry{2007}{Finalist}{\httplink[ACM Central Europe Programming Contest]{contest.felk.cvut.cz/07cerc/rank.html}}{Prague, Czech Republic}{}{}
+\cventry{2012}{\nth{26} place}{\httplink[ACM Central Europe Programming Contest]{cerc.tcs.uj.edu.pl/2012/ranking.html}}{Krakow, Poland}{}{}
+\cventry{2010}{\nth{105} place (out of 4600 contestants)}{\httplink[Google AI Challenge]{planetwars.aichallenge.org/rankings.php}}{}{}{}
+\cventry{2007}{\nth{40} place}{\httplink[ACM Central Europe Programming Contest]{contest.felk.cvut.cz/07cerc/rank.html}}{Prague, Czech Republic}{}{}
 \cventry{2006}{\nth{1} place in junior classification, \nth{7} place in open classification}{\httplink[Poznan Open 2006 -- Team Programming Championship]{2006.mwpz.poznan.pl/result.php\#junior}}{Poznan, Poland}{}{}
 \cventry{2006}{Finalist}{\httplink[XIII Polish Olympiad in Informatics]{www.oi.edu.pl/old/php/show.php?ac=p180603}}{Sopot, Poland}{}{}
 
@@ -110,22 +280,11 @@
 \cvitemwithcomment{English}{Fluent}{}
 \cvitemwithcomment{Japanese}{Intermediate}{Japanese Language Proficiency Test N3, Dec 2012}
 
-\section{Skills and Competences}
-\cvitem{Programming}{C/C++, Java, Ruby}
-\cvitem{Data processing}{MySQL, Redis, Kestrel, Hive, Hadoop}
-\cvitem{Infrastructure}{Opscode Chef, Amazon Web Services, Pacemaker}
-%\cvitem{Databases}{Microsoft SQL, MySQL, Amazon RedShift, MongoDB, Redis}
-%\cvitem{Parallel computing}{OpenMPI, CUDA}
-%\cvitem{Virtualization}{Xen, KVM, QEMU, libvirt}
-\cvitem{Web development}{Ruby on Rails, CSS, HTML, REST}
-\cvitem{Environments}{Vim, Emacs, Eclipse, Visual Studio 2012}
-\cvitem{Operating systems}{Linux, OS X, Windows}
-\cvitem{Others}{Agile methodology, Scrum, Test-driven development, Git}
-\cvitem{Specialty}{Advanced algorithms and data structures}
-%\cvitem{Soft skills}{Teamwork, leadership, 
-
 \section{Interests}
-Travel, literature, skiing, technology.
+\cvitem{Travel}{}
+\cvitem{Literature}{}
+\cvitem{Skiing}{}
+\cvitem{Technology}{}
 %\cvitem{}{Travel}
 %\cvitem{}{Literature}
 %\cvitem{}{Skiing}
@@ -140,11 +299,33 @@ Travel, literature, skiing, technology.
 %\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
 %\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
 
+\section{References}
+\cvitem{Steven Glickman}{}
+\cvitem{}{Principal Architect, The Nielsen Company}
+\cvitem{}{steven.glickman@nielsen.com}
+\cvitem{}{(773) 556-6344}
+~\newline
+\cvitem{Tom Clarke}{}
+\cvitem{}{Principal, u2i LLC}
+\cvitem{}{tom@u2i.com}
+\cvitem{}{(646) 262-5249}
+~\newline
+\cvitem{Hiroyuki Higuchi}{}
+\cvitem{}{Fujitsu Laboratories LLC}
+\cvitem{}{h-higuchi@jp.fujitsu.com}
+~\newline
+\cvitem{Mariusz Witek}{}
+\cvitem{}{Department Manager}
+\cvitem{}{Institute of Nuclear Physics PAN}
+\cvitem{}{mariusz.witek@ifj.edu.pl}
+\cvitem{}{(+48 12) 662-8047}
+
+
 %\section{References}
 %\begin{cvcolumns}
-% \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%\cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
 %\cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
 %\end{cvcolumns}
 
 % Publications from a BibTeX file without multibib
@@ -165,29 +346,29 @@ Travel, literature, skiing, technology.
 
 
 \begin{comment}
-\clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-%\recipient{MongoDB team}{10gen\\123 somestreet\\some city}
-\recipient{MongoDB Recruitment team}{}
-\date{August 28, 2013}
-\opening{Dear Sir or Madam,}
-\closing{Yours faithfully,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
+  \clearpage
+  %-----       letter       ---------------------------------------------------------
+  % recipient data
+  %\recipient{MongoDB team}{10gen\\123 somestreet\\some city}
+  \recipient{MongoDB Recruitment team}{}
+  \date{August 28, 2013}
+  \opening{Dear Sir or Madam,}
+  \closing{Yours faithfully,}
+  \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+  \makelettertitle
 
-I am a 25-year-old Software Engineer from Poland with a BSc degree in Computer Science and five years of development experience. I have worked for public institutions and private companies in France, Switzerland, Poland and Japan. While working in research departments has been pleasing, I was always pulled more towards solving real-life problems and interacting directly with clients. 
+  I am a 25-year-old Software Engineer from Poland with a BSc degree in Computer Science and five years of development experience. I have worked for public institutions and private companies in France, Switzerland, Poland and Japan. While working in research departments has been pleasing, I was always pulled more towards solving real-life problems and interacting directly with clients. 
 
-My current job provides me just that. As part of an Agile team I am working with a start-up company that has recently been acqui-hired by one of the largest TV audience monitoring companies in the world. My responsibilities include design and development of a scalable and robust data collection system. The system currently processes a gigabyte of textual data each minute and is designed to handle four times the amount.
+  My current job provides me just that. As part of an Agile team I am working with a start-up company that has recently been acqui-hired by one of the largest TV audience monitoring companies in the world. My responsibilities include design and development of a scalable and robust data collection system. The system currently processes a gigabyte of textual data each minute and is designed to handle four times the amount.
 
-I recently have made up my mind to move to Singapore and marry my Singaporean fiancee. I have been carefully looking at job opportunities in the region and MongoDB struck me as similar in culture to my current employer and the position as ideal for my particular set of skills. 
+  I recently have made up my mind to move to Singapore and marry my Singaporean fiancee. I have been carefully looking at job opportunities in the region and MongoDB struck me as similar in culture to my current employer and the position as ideal for my particular set of skills. 
 
-Guiding customers to redesign their systems requires not only broad technical knowledge but also a certain level of aptness at technology and good interpersonal skills. I believe that my technical aptitude combined with international experience could prove critical when dealing with clients in a multicultural environment like Singapore. 
+  Guiding customers to redesign their systems requires not only broad technical knowledge but also a certain level of aptness at technology and good interpersonal skills. I believe that my technical aptitude combined with international experience could prove critical when dealing with clients in a multicultural environment like Singapore. 
 
-Please find my CV attached.\newline
+  Please find my CV attached.\newline
 
 
-\makeletterclosing
+  \makeletterclosing
 \end{comment}
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
